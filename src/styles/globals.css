@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply overflow-hidden;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply rounded-md py-1 px-2 text-xl font-bold ring-1;
+  }
+  .input {
+    @apply rounded-xl border-2 border-blue-300 p-2;
+  }
+
+  .input:hover {
+    @apply border-blue-600;
+  }
+
+  .input option {
+    @apply p-2;
+  }
+}
